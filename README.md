@@ -3,21 +3,9 @@ Code for how to perform multiple queries in the API (Application Programming Int
 
 First of all, you need to enter the [API INEGI](https://www.inegi.org.mx/servicios/api_indicadores.html) page to get the [Token](https://www.inegi.org.mx/app/desarrolladores/generatoken/Usuarios/token_Verify) that will serve as a personal password for the queries you want to make on the INEGI API page.
 
-##Main parts of the code.
+The code allows the user to query multiple variables (more than the 10 allowed directly on the INEGI API page). In addition to consulting more than 1 entity at a time.
 
-###Preparing the queries
+The final objective of the code is to be able to carry out a graphic (and statistical) analysis of the INEGI information in an automated, clean and processed way to use software such as Tableou, Power BI, for presentations, research, etc.
 
-First, 3 specific vectors are made:
-1. Token
-2. Localities (states)
-3. Variable codes to consult.
-
-
-```
-key = "Previously queried token"
-Localidades = "Code of the towns that you want to consult"
-B1I = "Code of the variables to be consulted"
-```
-
-###Metadata Query
-
+An example of a Tableau dashboard with the information extracted into the code. It should be noted that the entire dashboard is interactive and interconnected with each other.
+![ExampleDashboard-Tableou](https://user-images.githubusercontent.com/85140481/222882743-d405071f-031f-418e-97a1-9863ea81569d.png)
